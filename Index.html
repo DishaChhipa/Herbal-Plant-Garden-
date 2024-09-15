@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Garden Hub</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 0;
+            color: #2e7d32;
+        }
+
+        nav {
+            background-color: #4caf50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #home {
+            text-align: center;
+            background-color: #c8e6c9; /* Slightly darker green background for better contrast */
+            padding: 50px 20px;
+            border-radius: 10px; /* Rounded corners for a softer look */
+        }
+
+        #home h2 {
+            font-size: 36px;
+            color: #1b5e20; /* Dark green text */
+        }
+
+        #home p {
+            font-size: 18px;
+            color: #388e3c; /* Medium green text */
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .btn a {
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #66bb6a;
+            color: white;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #features, #registration {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #features h1, #registration h1 {
+            color: #1b5e20;
+            font-size: 28px;
+        }
+
+        .fea-base, .registration-form {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .fea-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        .fea-box h3 {
+            color: #2e7d32;
+        }
+
+        .fea-box p {
+            color: #4caf50;
+        }
+
+        .cost {
+            color: #1b5e20;
+            font-weight: bold;
+        }
+
+        .form input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+            border: 2px solid #66bb6a;
+            border-radius: 5px;
+        }
+
+        .form .btn a {
+            background-color: #4caf50;
+        }
+
+        footer {
+            background-color: #4caf50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-col {
+            display: inline-block;
+            margin: 10px 20px;
+            vertical-align: top;
+        }
+
+        .footer-col h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .footer-col p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin: 5px 0;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            border-radius: 5px;
+            width: 180px;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .subscribe a {
+            padding: 10px 20px;
+            background-color: white;
+            color: #4caf50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <img src="logo.jpg" alt="Herbal Garden Hub Logo">
+    <div class="navigation">
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#registration">Join Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home">
+    <h2>Start Your Herbal Garden Journey Today</h2>
+    <p>Discover the power of nature with Herbal Garden Hub. Our platform helps you create your own herbal garden, embrace a healthy lifestyle, and understand your local environment. Powered by AI, we provide personalized recommendations, recognition tools, and analytics for a thriving garden experience.</p>
+    <div class="btn">
+        <a href="#">Get Started</a>
+        <a href="#">Learn More</a>
+    </div>
+</section>
+
+<section id="features">
+    <h1>Our Key Features</h1>
+    <div class="fea-base">
+        <div class="fea-box">
+            <i class="fas fa-leaf"></i>
+            <h3>Expert AI Guidance</h3>
+            <p>AI-powered insights to help you grow the perfect herbal garden.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-camera"></i>
+            <h3>Plant Recognition</h3>
+            <p>Easily identify herbs using advanced plant recognition technology.</p>
+        </div>
+        <div class="fea-box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Data Analytics</h3>
+            <p>Track garden growth with powerful data analytics and visual tools.</p>
+        </div>
+    </div>
+</section>
+
+<section id="registration">
+    <h1>Join Our Community</h1>
+    <p>Sign up for free to access personalized tools, guides, and AI-powered insights to help you grow your herbal garden.</p>
+    <div class="form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone Number">
+        <div class="btn">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h3>Resources</h3>
+        <ul>
+            <li>Herbal Garden Guides</li>
+            <li>AI-Powered Plant Care</li>
+            <li>Data Analytics Tools</li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>Featured Herbs</h3>
+        <ul>
+            <li>Mint</li>
+            <li>Lavender</li>
+            <li>Basil</li>
+            <li>Aloe Vera</li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest updates on herbal gardening and healthy living.</p>
+        <div class="subscribe">
+            <input type="email" placeholder="Your Email">
+            <a href="#">Subscribe</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Herbal Garden Hub. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    $('#menu-btn').click(function(){
+        $('nav.navigation ul').addClass('active')
+    });
+    $('#menu-close').click(function(){
+        $('nav.navigation ul').removeClass('active')
+    });
+</script>
+</body>
+</html>
