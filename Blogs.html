@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Garden</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 0;
+            color: #2e7d32;
+        }
+
+        nav {
+            background-color: #4caf50;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #about-home {
+            text-align: center;
+            background-color: #d4edda; /* Light green background */
+            padding: 50px 20px;
+            border-radius: 10px; /* Rounded corners for a softer look */
+        }
+
+        #about-home h2 {
+            font-size: 36px;
+            color: #1b5e20; /* Dark green text */
+        }
+
+        #blog-container {
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e8f5e9;
+        }
+
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .post {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .post h3 {
+            font-size: 24px;
+            color: #1b5e20;
+        }
+
+        .post p {
+            color: #388e3c;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .post a {
+            color: #66bb6a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cate {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .cate h2 {
+            font-size: 28px;
+            color: #1b5e20;
+        }
+
+        .cate a {
+            color: #388e3c;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .cate hr {
+            margin: 10px 0;
+            border: 0;
+            border-top: 1px solid #4caf50;
+        }
+
+        footer {
+            background-color: #4caf50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer-col {
+            display: inline-block;
+            margin: 10px 20px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .footer-col h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .footer-col li {
+            list-style: none;
+            margin: 5px 0;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            border: none;
+        }
+
+        .subscribe a {
+            padding: 10px 20px;
+            background-color: white;
+            color: #4caf50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+        }
+
+        .pro-links i {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <img src="logo.jpg" alt="Herbal Garden Logo">
+    <i id="menu-close" class="fa-regular fa-circle-xmark"></i>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="#">Blog</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="logos/menu.png" alt="Menu">
+    </div>
+</nav>
+
+<section id="about-home">
+    <h2>Botanical Brains</h2>
+</section>
+
+<section id="blog-container">
+    <div class="blogs">
+        <div class="post">
+            <img src="herb1.jpg" alt="Herbal Remedies">
+            <h3>Herbal Remedies: Nature's Medicine Cabinet</h3>
+            <p>Explore the world of herbal remedies, from common herbs to exotic plants. Learn how these natural wonders can aid in health and wellness, and discover recipes for simple herbal treatments that you can use at home.</p>
+            <a href="herbal-remedies.html">Read More</a>
+        </div>
+        <div class="post">
+            <img src="herb2.jpg" alt="Medicinal Plants">
+            <h3>Medicinal Plants: Secrets of Traditional Healing</h3>
+            <p>Dive into the history and science of medicinal plants. Understand their role in traditional medicine and how they can be used to treat various ailments. Uncover the benefits of integrating these plants into your daily life.</p>
+            <a href="medicinal-plants.html">Read More</a>
+        </div>
+        <div class="post">
+            <img src="herb3.jpg" alt="Growing Herbs">
+            <h3>Growing Herbs at Home: Tips and Tricks</h3>
+            <p>Learn how to start your own herbal garden with easy-to-follow tips on growing and caring for herbs. From choosing the right plants to maintaining optimal growing conditions, discover everything you need to cultivate a thriving herb garden.</p>
+            <a href="growing-herbs.html">Read More</a>
+        </div>
+        <div class="post">
+            <img src="herb4.jpg" alt="Herb-Based Recipes">
+            <h3>Delicious Herb-Based Recipes</h3>
+            <p>Enhance your culinary skills with a collection of recipes featuring herbs. Find out how to incorporate fresh herbs into your cooking to elevate flavors and add nutritional benefits to your meals.</p>
+            <a href="herb-recipes.html">Read More</a>
+        </div>
+    </div>
+    <div class="cate">
+        <h2>Categories</h2>
+        <hr>
+        <a href="#">Herbal Remedies</a>
+        <hr>
+        <a href="#">Medicinal Plants</a>
+        <hr>
+        <a href="#">Herb Gardening</a>
+        <hr>
+        <a href="#">Herb-Based Recipes</a>
+        <hr>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-col">
+        <h3>Top Resources</h3>
+        <li>Educational Tutorials</li>
+        <li>Student Guides</li>
+        <li>Learning Tools</li>
+        <li>Data Science Case Studies</li>
+    </div>
+    <div class="footer-col">
+        <h3>Featured Topics</h3>
+        <li>C Programming for Beginners</li>
+        <li>Machine Learning Insights</li>
+        <li>Analytics Best Practices</li>
+        <li>AI and Predictive Modeling</li>
+    </div>
+    <div class="footer-col">
+        <h3>Highlighted Areas</h3>
+        <li>Inclusive Tech Education</li>
+        <li>Collaborative Learning Strategies</li>
+        <li>Personalized Growth Pathways</li>
+        <li>Neurodivergent Learning Tools</li>
+    </div>
+    <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Receive exclusive updates, expert insights, and key developments from Herbal Garden, your premier source for innovative herbal education.</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Herbal Garden. All rights reserved
+    
+    <div class="pro-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
