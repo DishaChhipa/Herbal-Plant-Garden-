@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: #e8f5e9;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #1b5e20;
+            margin-bottom: 20px;
+        }
+
+        .forum-container, .gallery-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .forum-container h3, .gallery-container h3 {
+            font-size: 28px;
+            color: #1b5e20;
+            margin-bottom: 20px;
+        }
+
+        .forum-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .forum-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .forum-container button:hover {
+            background-color: #45a049;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<section class="section">
+    <div class="forum-container">
+        <h3>User Forum</h3>
+        <p>Share your experiences, ask questions, and discuss all things herbalism with fellow enthusiasts.</p>
+        <form action="submit_forum_post.php" method="post">
+            <textarea name="forum-post" rows="5" placeholder="Start a new discussion or share your thoughts..." required></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <div class="gallery-container">
+        <h3>Photo Gallery</h3>
+        <p>Browse through photos of herbal gardens and herbal products shared by our community members.</p>
+        <!-- Sample images; replace with actual user-submitted images -->
+        <img src="garden1.jpg" alt="Herbal Garden 1">
+        <img src="garden2.jpg" alt="Herbal Garden 2">
+        <img src="product1.jpg" alt="Herbal Product 1">
+        <img src="product2.jpg" alt="Herbal Product 2">
+    </div>
+</section>
+
+</body>
+</html>
